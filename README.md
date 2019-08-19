@@ -1,2 +1,2 @@
 # serverless-tour
-simple simple serverless apply scene .
+simple serverless apply scene .

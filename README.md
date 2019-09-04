@@ -4,9 +4,9 @@
 
 
 
-##无服务架构在Python中应用场景实现。
+## 无服务架构在Python中应用场景实现。
 
-###使用JWT和AWS ApiGateway自定义授权程序的授权示例。
+### 使用JWT和AWS ApiGateway自定义授权程序的授权示例。
 
 python 3.6 环境下运行开发。
 
@@ -21,7 +21,7 @@ jwt_gateway_function(统一分发函数)
 jwt_refreshing_function(刷新授权函数)
 
 
-#####解决问题：
+##### 解决问题：
     
    现有系统内网服务供外部使用，负载网关，追求稳定并且通用，那么API Gateway 可靠性不二之选。
    
@@ -31,14 +31,14 @@ jwt_refreshing_function(刷新授权函数)
 
 
 
-#####参考资料：
+##### 参考资料：
 
    [AWS API Gateway Lambda 授权方](https://docs.amazonaws.cn/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
     ，
    [Serverless-Auth](https://github.com/yosriady/serverless-auth)
     
     
-#####遇到问题：
+##### 遇到问题：
 
    获取token解析后，如果将当前用户信息带到执行lambda函数执行上下文中。
    
@@ -63,7 +63,7 @@ jwt_refreshing_function(刷新授权函数)
    [使用自定义授权程序上下文与Lambda代理集成](https://medium.com/tomincode/using-custom-authorizer-context-with-lambda-proxy-integration-1f6eeabb5e4f)
       
 
-#####整体构架：
+##### 整体构架：
 
    ![架构图!](jwt_function/image/architecture.png)
 
